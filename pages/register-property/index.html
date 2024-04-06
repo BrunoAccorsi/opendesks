@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Property</title>
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+    <main>
+        <h1 class="page-title">Property Registration</h1>
+
+        <h4>Fill in the form below with the property information:</h4>
+
+        <form id="property-registration-form" enctype="multipart/form-data">
+            <img class="property-image-preview hidden">
+            <div class="form-content">
+                <div class="input-container">
+                    <label class="base-button" for="buildingName">Property Name</label>
+                    <input type="text" class="space-to-fill" id="buildingName" name="buildingName"
+                        placeholder="Type the name of the Property" required />
+                </div>
+            </div>
+            <div class="form-content">
+                <div class="input-container">
+                    <label class="base-button" for="address">Address</label>
+                    <input type="text" class="space-to-fill" id="address" name="address"
+                        placeholder="Type the address of the Property" required />
+                </div>
+            </div>
+            <div class="form-content">
+                <div class="input-container">
+                    <label class="base-button" for="neighborhood">Neighborhood</label>
+                    <input type="text" class="space-to-fill" id="neighborhood" name="neighborhood"
+                        placeholder="Describe the neighborhood of the Property" required />
+                </div>
+                <div class="input-container">
+                    <label class="base-button" for="squareFeet">Square feet</label>
+                    <input type="number" class="space-to-fill" id="squareFeet" name="squareFeet"
+                        placeholder="Type the size of the area in square feet" required />
+                </div>
+            </div>
+            <div class="form-content">
+                <div class="input-container">
+                    <label class="base-button">Parking</label>
+                    <div>
+                        <input type="radio" name="hasParkingGarage" id="parking_yes" value="1" required />
+                        <label class="double-choice" for="parking_yes">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="hasParkingGarage" id="parking_no" value="0" required />
+                        <label class="double-choice" for="parking_no">No</label>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <label class="base-button">Public Transport</label>
+                    <div>
+                        <input type="radio" name="hasPublicTransportNearBy" id="hasPublicTransportNearBy_yes" value="1"
+                            required />
+                        <label class="double-choice" for="hasPublicTransportNearBy_yes">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="hasPublicTransportNearBy" id="hasPublicTransportNearBy_no" value="0"
+                            required />
+                        <label class="double-choice" for="hasPublicTransportNearBy_no">No</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-content">
+                <div class="input-container">
+                    <label class="base-button">Workspace Type</label>
+                    <div>
+                        <input type="checkbox" class="space-to-fill" id="type_desk" name="workspaceTypes" value="desk"
+                            required />
+                        <label class="double-choice" for="type_desk">Desk in a Workspace area</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="space-to-fill" id="type_meeting_room" name="workspaceTypes"
+                            value="meeting_room" required />
+                        <label class="double-choice" for="type_meeting_room">Meeting Room</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="space-to-fill" id="type_private_office" name="workspaceTypes"
+                            value="private_office" required />
+                        <label class="double-choice" for="type_private_office">Private Office Room</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-content">
+                <div class="input-container">
+                    <label class="base-button" for="property-image">Images</label>
+                    <span class="space-to-fill" id="uploaded-file-name">
+                        Select an Image for the Property</span>
+
+                    <img class="upload-btn-image" src="../../assets/svg/upload.svg" alt="Upload Image" />
+                    <input type="file" id="upload-image-input" name="image" class="hidden" accept=".jpg,.jpeg,.png" />
+                </div>
+            </div>
+            <input type="hidden" name="propertyId">
+            <button id="send-button" class="base-button form-submit" type="submit">
+                Save
+            </button>
+        </form>
+    </main>
+    <script type="module" src="../../scripts/domBuilder.js"></script>
+    <script type="module" src="../../scripts/script.js"></script>
+    <script type="module" src="./register-property.js"></script>
+</body>
+
+</html>

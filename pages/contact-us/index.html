@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../style.css" />
+
+</head>
+
+<body>
+    <main>
+        <h1 class="page-title">Contact Us</h1>
+
+        <h4>
+            Fill the information below and we will contact you as soon as possible.
+        </h4>
+
+        <form id="user-contact-us-form">
+            <div class="form-content">
+                <div class="input-container">
+                    <label class="base-button" for="name">Name</label>
+                    <input type="text" class="space-to-fill" name="name" placeholder="Type your name" />
+                </div>
+
+                <span class="input-error"></span>
+            </div>
+            <div class="form-content">
+                <div class="input-container">
+                    <label class="base-button" for="email">E-mail</label>
+                    <input type="email" class="space-to-fill" name="email" placeholder="Type your email" />
+                </div>
+
+                <span class="input-error"></span>
+            </div>
+            <div class="form-content">
+                <div class="input-container">
+                    <label class="base-button" for="phone">Phone</label>
+                    <input type="text" class="space-to-fill" name="phone" placeholder="Type your phone number" />
+                </div>
+
+                <span class="input-error"></span>
+            </div>
+            <div class="form-content">
+                <div class="input-container">
+                    <label class="base-button" for="question">Question</label>
+                    <input type="text" class="space-to-fill" name="question" placeholder="How can we help?" />
+                </div>
+
+                <span class="input-error"></span>
+            </div>
+
+            </div>
+            <button id="send-button " class="base-button form-submit" type="submit">
+                Send
+            </button>
+        </form>
+
+
+
+
+    </main>
+    <script type="module" src="../../scripts/domBuilder.js"></script>
+    <script type="module" src="../../scripts/script.js"></script>
+    <script src="./contact-us.js"></script>
+</body>
+
+</html>

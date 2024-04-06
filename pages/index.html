@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Open Spaces</title>
+</head>
+
+<body>
+    <main>
+        <section id="search-section">
+            <form id="search-form" method="post">
+                <!-- <div class="input-container">
+                    <label >Types</label>
+                    <div>
+                        <input type="checkbox" name="type[meeting_room]" id="parking_yes" value="1"  />
+                        <label class="double-choice" for="parking_yes">Meeting Room</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="type[private_office]" id="parking_no" value="1"  />
+                        <label class="double-choice" for="parking_no">Private Office</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="type[desk]" id="parking_no" value="1"  />
+                        <label class="double-choice" for="parking_no">Desk</label>
+                    </div>
+                </div> -->
+                <div class="filters-container">
+                    <div class="filter-container">
+                        <label>Public Transport</label>
+                        <div>
+                            <input type="radio" name="hasPublicTransportNearBy" id="hasPublicTransportNearBy_yes"
+                                value="1" />
+                            <label class="double-choice" for="hasPublicTransportNearBy_yes">Yes</label>
+
+                            <input type="radio" name="hasPublicTransportNearBy" id="hasPublicTransportNearBy_no"
+                                value="0" />
+                            <label class="double-choice" for="hasPublicTransportNearBy_no">No</label>
+                        </div>
+                    </div>
+                    <div class="filter-container">
+                        <label>Parking</label>
+                        <div>
+                            <input type="radio" name="hasParkingGarage" id="parking_yes" value="1" />
+                            <label class="double-choice" for="parking_yes">Yes</label>
+
+                            <input type="radio" name="hasParkingGarage" id="parking_no" value="0" />
+                            <label class="double-choice" for="parking_no">No</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- <input type="text" /> -->
+                <button class="base-button" type="submit">Search</button>
+            </form>
+        </section>
+
+        <section class="workspaces-section"></section>
+        <section class="no-content-available"></section>
+    </main>
+    <script type="module" src="../scripts/domBuilder.js"></script>
+    <script type="module" src="../scripts/session.js"></script>
+    <script type="module" src="../scripts/config.js"></script>
+    <script type="module" src="../scripts/script.js"></script>
+</body>
+
+</html>
