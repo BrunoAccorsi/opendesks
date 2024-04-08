@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', async function () {
   const bookings = await getMyBookings();
 
   const noContentSection = document.querySelector('.no-content-available');
-  if (!bookings.length) {
+  if (bookings.error || bookings.length === 0) {
     noContentSection.innerHTML =
       "<p class='none-available'>You don't have any booking yet!</p>";
     noContentSection.style.display = 'grid';
